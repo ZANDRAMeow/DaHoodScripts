@@ -1,419 +1,431 @@
-if not game:IsLoaded() then
-	game.Loaded:Wait()
-end
+wait(0.5)local ba=Instance.new("ScreenGui")
+local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
+local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
+ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
+ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
+ca.Position=UDim2.new(0894267426272,727425632456,873275673563,62452545)ca.Size=UDim2.new(0,0,0)
+ca.Font=Enum.Font.SourceSansSemibold;ca.Text="Anti AFK Script"ca.TextColor3=Color3.new(0,1,1)
+ca.TextSize=22;da.Parent=ca
+da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(999,999,999)
+da.Size=UDim2.new(0,370,0,107)_b.Parent=da
+_b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(999,999,999)
+_b.Size=UDim2.new(0,370,0,21)_b.Font=Enum.Font.Arial;_b.Text="made by ur mom "
+_b.TextColor3=Color3.new(0,1,1)_b.TextSize=20;ab.Parent=da
+ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(999,999,999)
+ab.Size=UDim2.new(0,370,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Active"
+ab.TextColor3=Color3.new(0,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+bb:CaptureController()bb:ClickButton2(Vector2.new())
+ab.Text="Roblox tried to kick u but i kicked him instead"wait(2)ab.Text="Status : Active"end)
 local ScreenGui = Instance.new("ScreenGui")
+local ImageLabel = Instance.new("ImageLabel")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local Display = Instance.new("Frame")
+local Frame1 = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
-local Exit = Instance.new("TextButton")
-local Page1 = Instance.new("ImageButton")
-local Tab1 = Instance.new("Frame")
-local UICorner_3 = Instance.new("UICorner")
-local ImageLabel = Instance.new("ImageLabel")
-local UICorner_4 = Instance.new("UICorner")
-local TextLabels = Instance.new("Frame")
-local UICorner_5 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
-local TextLabel_2 = Instance.new("TextLabel")
-local TextLabel_3 = Instance.new("TextLabel")
-local Tab2 = Instance.new("Frame")
-local UICorner_6 = Instance.new("UICorner")
-local PlayerInfo = Instance.new("TextBox")
-local UICorner_7 = Instance.new("UICorner")
-local GoTo = Instance.new("TextButton")
-local A_VIEW = Instance.new("TextButton")
-local Page2 = Instance.new("ImageButton")
-local CashCounter = Instance.new("TextLabel")
 local Title = Instance.new("TextLabel")
-local Tab3 = Instance.new("Frame")
+local Lines = Instance.new("Frame")
+local Gui = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local TargetPage = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Target = Instance.new("TextLabel")
+local PlayerInfo = Instance.new("TextBox")
+local UICorner_5 = Instance.new("UICorner")
+local GoTo = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local A_VIEW = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Main = Instance.new("Frame")
 local UICorner_8 = Instance.new("UICorner")
+local Main_2 = Instance.new("TextLabel")
 local Fly = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
-local NoFog = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
 local LowGfx = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local SpyChat = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
-local Cdestroy = Instance.new("TextButton")
+local FreeCam = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
-local CdestroyLoop = Instance.new("TextButton")
+local AdminBase = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
-local Freecam = Instance.new("TextButton")
+local Crashing = Instance.new("Frame")
 local UICorner_14 = Instance.new("UICorner")
-local Fps60 = Instance.new("TextButton")
+local Crashing_2 = Instance.new("TextLabel")
+local Swagmode = Instance.new("TextButton")
+local Swagmode_2 = Instance.new("TextLabel")
 local UICorner_15 = Instance.new("UICorner")
-local Fps40 = Instance.new("TextButton")
+local Encrypt = Instance.new("TextButton")
+local Encrypt_2 = Instance.new("TextLabel")
 local UICorner_16 = Instance.new("UICorner")
-local LowGfx_2 = Instance.new("TextButton")
+local BetterDahood = Instance.new("TextButton")
+local BetterDaHood = Instance.new("TextLabel")
 local UICorner_17 = Instance.new("UICorner")
-local Logo = Instance.new("ImageLabel")
-local Page3 = Instance.new("ImageButton")
+local CashCounterPage = Instance.new("Frame")
+local UICorner_18 = Instance.new("UICorner")
+local BetterDaHood_2 = Instance.new("TextLabel")
+local CashCoutner = Instance.new("TextLabel")
 
-ScreenGui.Parent = game.CoreGui
+--Properties:
+
+ScreenGui.Parent = game.Workspace
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
-Frame.Position = UDim2.new(0.335451961, 0, 0.444444478, 0)
-Frame.Size = UDim2.new(0, 463, 0, 282)
-UICorner.CornerRadius = UDim.new(0, 4)
+ImageLabel.Parent = ScreenGui
+ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0, 694, 0, 472)
+ImageLabel.Size = UDim2.new(0, 404, 0, 517)
+ImageLabel.Image = "rbxassetid://6015897843"
+ImageLabel.ImageColor3 = Color3.fromRGB(0, 0, 0)
+
+Frame.Parent = ImageLabel
+Frame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 19, 0, 24)
+Frame.Size = UDim2.new(0, 366, 0, 469)
+
+UICorner.CornerRadius = UDim.new(0, 3)
 UICorner.Parent = Frame
 
-Display.Name = "Display"
-Display.Parent = Frame
-Display.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Display.Position = UDim2.new(0.127429798, 0, 0.170212761, 0)
-Display.Size = UDim2.new(0, 397, 0, 192)
+Frame1.Name = "Frame1"
+Frame1.Parent = Frame
+Frame1.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Frame1.Position = UDim2.new(0, 6, 0, 6)
+Frame1.Size = UDim2.new(0, 354, 0, 457)
+
 UICorner_2.CornerRadius = UDim.new(0, 4)
-UICorner_2.Parent = Display
+UICorner_2.Parent = Frame1
 
-Exit.Name = "Exit"
-Exit.Parent = Frame
-Exit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Exit.BackgroundTransparency = 1.000
-Exit.Position = UDim2.new(0.941684663, 0, 0, 0)
-Exit.Size = UDim2.new(0, 27, 0, 30)
-Exit.Font = Enum.Font.GothamMedium
-Exit.Text = "X"
-Exit.TextColor3 = Color3.fromRGB(255, 255, 255)
-Exit.TextSize = 19.000
+Title.Name = "Title"
+Title.Parent = Frame1
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0, 102, 0, 0)
+Title.Size = UDim2.new(0, 150, 0, 31)
+Title.Font = Enum.Font.GothamMedium
+Title.Text = "Title Please"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 16.000
 
-Page1.Name = "Page1"
-Page1.Parent = Frame
-Page1.BackgroundTransparency = 1.000
-Page1.LayoutOrder = 3
-Page1.Position = UDim2.new(0.0269978046, 0, 0.170212746, 0)
-Page1.Size = UDim2.new(0, 32, 0, 32)
-Page1.ZIndex = 2
-Page1.Image = "rbxassetid://3926305904"
-Page1.ImageRectOffset = Vector2.new(144, 4)
-Page1.ImageRectSize = Vector2.new(24, 24)
+Lines.Name = "Lines"
+Lines.Parent = Frame1
+Lines.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Lines.BorderSizePixel = 0
+Lines.Position = UDim2.new(0, 6, 0, 31)
+Lines.Size = UDim2.new(0, 342, 0, 2)
 
-Tab1.Name = "Tab1"
-Tab1.Parent = Frame
-Tab1.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Tab1.Position = UDim2.new(0.125270009, 0, 0.173758805, 0)
-Tab1.Size = UDim2.new(0, 397, 0, 191)
-UICorner_3.CornerRadius = UDim.new(0, 4)
-UICorner_3.Parent = Tab1
+Gui.Name = "Gui"
+Gui.Parent = Frame1
+Gui.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Gui.BorderSizePixel = 0
+Gui.Position = UDim2.new(0, 6, 0, 40)
+Gui.Size = UDim2.new(0, 342, 0, 410)
 
-ImageLabel.Parent = Tab1
-ImageLabel.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-ImageLabel.Position = UDim2.new(0.380352616, 0, 0.0338355303, 0)
-ImageLabel.Size = UDim2.new(0, 94, 0, 94)
-ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-UICorner_4.CornerRadius = UDim.new(0, 100)
-UICorner_4.Parent = ImageLabel
+UICorner_3.CornerRadius = UDim.new(0, 5)
+UICorner_3.Parent = Gui
 
-TextLabels.Name = "TextLabels"
-TextLabels.Parent = Tab1
-TextLabels.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-TextLabels.Position = UDim2.new(0.1813602, 0, 0.564130366, 0)
-TextLabels.Size = UDim2.new(0, 253, 0, 77)
-UICorner_5.CornerRadius = UDim.new(0, 4)
-UICorner_5.Parent = TextLabels
+TargetPage.Name = "TargetPage"
+TargetPage.Parent = Gui
+TargetPage.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TargetPage.Position = UDim2.new(0, 6, 0, 6)
+TargetPage.Size = UDim2.new(0, 167, 0, 107)
 
-TextLabel.Parent = TextLabels
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0, 0, 0.0909090936, 0)
-TextLabel.Size = UDim2.new(0, 253, 0, 18)
-TextLabel.Font = Enum.Font.GothamMedium
-TextLabel.Text = "Welcome, Builderman"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 15.000
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent = TargetPage
 
-TextLabel_2.Parent = TextLabels
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0, 0, 0.376623392, 0)
-TextLabel_2.Size = UDim2.new(0, 253, 0, 18)
-TextLabel_2.Font = Enum.Font.GothamMedium
-TextLabel_2.Text = "Press [V] To Hide"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextSize = 15.000
-
-TextLabel_3.Parent = TextLabels
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(-0.00395256933, 0, 0.688311696, 0)
-TextLabel_3.Size = UDim2.new(0, 253, 0, 18)
-TextLabel_3.Font = Enum.Font.GothamMedium
-TextLabel_3.Text = "Made By: ZANDRA#6163"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextSize = 15.000
-
-Tab2.Name = "Tab2"
-Tab2.Parent = Frame
-Tab2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Tab2.Position = UDim2.new(0.125270009, 0, 0.170212746, 0)
-Tab2.Size = UDim2.new(0, 397, 0, 192)
-Tab2.Visible = false
-UICorner_6.CornerRadius = UDim.new(0, 4)
-UICorner_6.Parent = Tab2
+Target.Name = "Target"
+Target.Parent = TargetPage
+Target.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Target.BackgroundTransparency = 1.000
+Target.BorderSizePixel = 0
+Target.Size = UDim2.new(0, 48, 0, 20)
+Target.Font = Enum.Font.GothamMedium
+Target.Text = "Target"
+Target.TextColor3 = Color3.fromRGB(255, 255, 255)
+Target.TextSize = 14.000
 
 PlayerInfo.Name = "PlayerInfo"
-PlayerInfo.Parent = Tab2
-PlayerInfo.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+PlayerInfo.Parent = TargetPage
+PlayerInfo.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
 PlayerInfo.BorderSizePixel = 0
-PlayerInfo.Position = UDim2.new(0.156171277, 0, 0.191859394, 0)
-PlayerInfo.Size = UDim2.new(0, 273, 0, 50)
+PlayerInfo.Position = UDim2.new(0, 6, 0, 27)
+PlayerInfo.Size = UDim2.new(0, 155, 0, 33)
 PlayerInfo.Font = Enum.Font.GothamMedium
-PlayerInfo.PlaceholderText = "Player's Name"
+PlayerInfo.PlaceholderText = "..Player's Name.."
 PlayerInfo.Text = ""
 PlayerInfo.TextColor3 = Color3.fromRGB(255, 255, 255)
-PlayerInfo.TextSize = 18.000
-UICorner_7.CornerRadius = UDim.new(0, 4)
-UICorner_7.Parent = PlayerInfo
+PlayerInfo.TextSize = 14.000
+
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = PlayerInfo
 
 GoTo.Name = "GoTo"
-GoTo.Parent = Tab2
-GoTo.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-GoTo.BorderSizePixel = 0
-GoTo.Position = UDim2.new(0.156171292, 0, 0.495847076, 0)
-GoTo.Size = UDim2.new(0, 132, 0, 39)
+GoTo.Parent = TargetPage
+GoTo.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+GoTo.Position = UDim2.new(0, 7, 0, 68)
+GoTo.Size = UDim2.new(0, 76, 0, 30)
 GoTo.Font = Enum.Font.GothamMedium
-GoTo.Text = "GoTo"
+GoTo.Text = "Teleport"
 GoTo.TextColor3 = Color3.fromRGB(255, 255, 255)
-GoTo.TextSize = 16.000
+GoTo.TextSize = 15.000
+
+UICorner_6.CornerRadius = UDim.new(0, 4)
+UICorner_6.Parent = GoTo
 
 A_VIEW.Name = "A_VIEW"
-A_VIEW.Parent = Tab2
-A_VIEW.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-A_VIEW.BorderSizePixel = 0
-A_VIEW.Position = UDim2.new(0.510573685, 0, 0.495847076, 0)
-A_VIEW.Size = UDim2.new(0, 132, 0, 39)
+A_VIEW.Parent = TargetPage
+A_VIEW.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+A_VIEW.Position = UDim2.new(0, 85, 0, 68)
+A_VIEW.Size = UDim2.new(0, 76, 0, 30)
 A_VIEW.Font = Enum.Font.GothamMedium
 A_VIEW.Text = "View"
 A_VIEW.TextColor3 = Color3.fromRGB(255, 255, 255)
-A_VIEW.TextSize = 16.000
+A_VIEW.TextSize = 15.000
 
-Page2.Name = "Page2"
-Page2.Parent = Frame
-Page2.BackgroundTransparency = 1.000
-Page2.LayoutOrder = 3
-Page2.Position = UDim2.new(0.018358469, 0, 0.304964542, 0)
-Page2.Size = UDim2.new(0, 39, 0, 33)
-Page2.ZIndex = 2
-Page2.Image = "rbxassetid://3926307971"
-Page2.ImageRectOffset = Vector2.new(924, 444)
-Page2.ImageRectSize = Vector2.new(36, 36)
+UICorner_7.CornerRadius = UDim.new(0, 4)
+UICorner_7.Parent = A_VIEW
 
-CashCounter.Name = "CashCounter"
-CashCounter.Parent = Frame
-CashCounter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CashCounter.BackgroundTransparency = 1.000
-CashCounter.Position = UDim2.new(0.127429739, 0, 0.851064026, 0)
-CashCounter.Size = UDim2.new(0, 131, 0, 41)
-CashCounter.Font = Enum.Font.GothamMedium
-CashCounter.Text = "$100,000,000"
-CashCounter.TextColor3 = Color3.fromRGB(255, 255, 255)
-CashCounter.TextSize = 19.000
-CashCounter.TextXAlignment = Enum.TextXAlignment.Left
+Main.Name = "Main"
+Main.Parent = Gui
+Main.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Main.Position = UDim2.new(0, 179, 0, 6)
+Main.Size = UDim2.new(0, 157, 0, 217)
 
-Title.Name = "Title"
-Title.Parent = Frame
-Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title.BackgroundTransparency = 1.000
-Title.Position = UDim2.new(0.0172789097, 0, 0.0460991859, 0)
-Title.Size = UDim2.new(0, 210, 0, 24)
-Title.Font = Enum.Font.GothamMedium
-Title.Text = "Discord.gg/altcontrol"
-Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.TextSize = 19.000
-
-Tab3.Name = "Tab3"
-Tab3.Parent = Frame
-Tab3.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Tab3.Position = UDim2.new(0.140388846, 0, 0.17021288, 0)
-Tab3.Size = UDim2.new(0, 397, 0, 192)
-Tab3.Visible = false
 UICorner_8.CornerRadius = UDim.new(0, 4)
-UICorner_8.Parent = Tab3
+UICorner_8.Parent = Main
+
+Main_2.Name = "Main"
+Main_2.Parent = Main
+Main_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main_2.BackgroundTransparency = 1.000
+Main_2.BorderSizePixel = 0
+Main_2.Size = UDim2.new(0, 34, 0, 20)
+Main_2.Font = Enum.Font.GothamMedium
+Main_2.Text = "Main"
+Main_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main_2.TextSize = 14.000
 
 Fly.Name = "Fly"
-Fly.Parent = Tab3
-Fly.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Fly.BorderSizePixel = 0
-Fly.Position = UDim2.new(0.01511335, 0, 0.0677080154, 0)
-Fly.Size = UDim2.new(0, 123, 0, 43)
+Fly.Parent = Main
+Fly.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Fly.Position = UDim2.new(0, 6, 0, 26)
+Fly.Size = UDim2.new(0, 145, 0, 31)
 Fly.Font = Enum.Font.GothamMedium
 Fly.Text = "Fly [X]"
 Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
-Fly.TextSize = 16.000
+Fly.TextSize = 15.000
+
 UICorner_9.CornerRadius = UDim.new(0, 4)
 UICorner_9.Parent = Fly
 
-NoFog.Name = "NoFog"
-NoFog.Parent = Tab3
-NoFog.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-NoFog.BorderSizePixel = 0
-NoFog.Position = UDim2.new(0.343599647, 0, 0.0677080154, 0)
-NoFog.Size = UDim2.new(0, 123, 0, 43)
-NoFog.Font = Enum.Font.GothamMedium
-NoFog.Text = "NoFog"
-NoFog.TextColor3 = Color3.fromRGB(255, 255, 255)
-NoFog.TextSize = 16.000
-UICorner_10.CornerRadius = UDim.new(0, 4)
-UICorner_10.Parent = NoFog
-
 LowGfx.Name = "LowGfx"
-LowGfx.Parent = Tab3
-LowGfx.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-LowGfx.BorderSizePixel = 0
-LowGfx.Position = UDim2.new(0.672086239, 0, 0.0677080154, 0)
-LowGfx.Size = UDim2.new(0, 123, 0, 43)
+LowGfx.Parent = Main
+LowGfx.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+LowGfx.Position = UDim2.new(0, 6, 0, 64)
+LowGfx.Size = UDim2.new(0, 145, 0, 31)
 LowGfx.Font = Enum.Font.GothamMedium
 LowGfx.Text = "Low GFX"
 LowGfx.TextColor3 = Color3.fromRGB(255, 255, 255)
-LowGfx.TextSize = 16.000
+LowGfx.TextSize = 15.000
+
+UICorner_10.CornerRadius = UDim.new(0, 4)
+UICorner_10.Parent = LowGfx
+
+SpyChat.Name = "SpyChat"
+SpyChat.Parent = Main
+SpyChat.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+SpyChat.Position = UDim2.new(0, 6, 0, 101)
+SpyChat.Size = UDim2.new(0, 145, 0, 31)
+SpyChat.Font = Enum.Font.GothamMedium
+SpyChat.Text = "Spy Chat"
+SpyChat.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpyChat.TextSize = 15.000
+
 UICorner_11.CornerRadius = UDim.new(0, 4)
-UICorner_11.Parent = LowGfx
+UICorner_11.Parent = SpyChat
 
-Cdestroy.Name = "Cdestroy"
-Cdestroy.Parent = Tab3
-Cdestroy.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Cdestroy.BorderSizePixel = 0
-Cdestroy.Position = UDim2.new(0.01511335, 0, 0.393898398, 0)
-Cdestroy.Size = UDim2.new(0, 123, 0, 43)
-Cdestroy.Font = Enum.Font.GothamMedium
-Cdestroy.Text = "Cdestroy"
-Cdestroy.TextColor3 = Color3.fromRGB(255, 255, 255)
-Cdestroy.TextSize = 16.000
+FreeCam.Name = "FreeCam"
+FreeCam.Parent = Main
+FreeCam.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+FreeCam.Position = UDim2.new(0, 6, 0, 138)
+FreeCam.Size = UDim2.new(0, 145, 0, 31)
+FreeCam.Font = Enum.Font.GothamMedium
+FreeCam.Text = "Free Cam [P]"
+FreeCam.TextColor3 = Color3.fromRGB(255, 255, 255)
+FreeCam.TextSize = 15.000
+
 UICorner_12.CornerRadius = UDim.new(0, 4)
-UICorner_12.Parent = Cdestroy
+UICorner_12.Parent = FreeCam
 
-CdestroyLoop.Name = "CdestroyLoop"
-CdestroyLoop.Parent = Tab3
-CdestroyLoop.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-CdestroyLoop.BorderSizePixel = 0
-CdestroyLoop.Position = UDim2.new(0.343599647, 0, 0.393898398, 0)
-CdestroyLoop.Size = UDim2.new(0, 123, 0, 43)
-CdestroyLoop.Font = Enum.Font.GothamMedium
-CdestroyLoop.Text = "Cdestroy (Loop)"
-CdestroyLoop.TextColor3 = Color3.fromRGB(255, 255, 255)
-CdestroyLoop.TextSize = 15.000
+AdminBase.Name = "AdminBase"
+AdminBase.Parent = Main
+AdminBase.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+AdminBase.Position = UDim2.new(0, 6, 0, 175)
+AdminBase.Size = UDim2.new(0, 145, 0, 31)
+AdminBase.Font = Enum.Font.GothamMedium
+AdminBase.Text = "Admin Base"
+AdminBase.TextColor3 = Color3.fromRGB(255, 255, 255)
+AdminBase.TextSize = 15.000
+
 UICorner_13.CornerRadius = UDim.new(0, 4)
-UICorner_13.Parent = CdestroyLoop
+UICorner_13.Parent = AdminBase
 
-Freecam.Name = "Freecam"
-Freecam.Parent = Tab3
-Freecam.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Freecam.BorderSizePixel = 0
-Freecam.Position = UDim2.new(0.672086239, 0, 0.393898398, 0)
-Freecam.Size = UDim2.new(0, 123, 0, 43)
-Freecam.Font = Enum.Font.GothamMedium
-Freecam.Text = "Free cam [P]"
-Freecam.TextColor3 = Color3.fromRGB(255, 255, 255)
-Freecam.TextSize = 16.000
+Crashing.Name = "Crashing"
+Crashing.Parent = Gui
+Crashing.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Crashing.Position = UDim2.new(0, 6, 0, 119)
+Crashing.Size = UDim2.new(0, 167, 0, 205)
+
 UICorner_14.CornerRadius = UDim.new(0, 4)
-UICorner_14.Parent = Freecam
+UICorner_14.Parent = Crashing
 
-Fps60.Name = "Fps60"
-Fps60.Parent = Tab3
-Fps60.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Fps60.BorderSizePixel = 0
-Fps60.Position = UDim2.new(0.01511335, 0, 0.737256765, 0)
-Fps60.Size = UDim2.new(0, 123, 0, 43)
-Fps60.Font = Enum.Font.GothamMedium
-Fps60.Text = "Set FPS to 60"
-Fps60.TextColor3 = Color3.fromRGB(255, 255, 255)
-Fps60.TextSize = 16.000
+Crashing_2.Name = "Crashing"
+Crashing_2.Parent = Crashing
+Crashing_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Crashing_2.BackgroundTransparency = 1.000
+Crashing_2.BorderSizePixel = 0
+Crashing_2.Size = UDim2.new(0, 42, 0, 20)
+Crashing_2.Font = Enum.Font.GothamMedium
+Crashing_2.Text = "Crash"
+Crashing_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Crashing_2.TextSize = 14.000
+
+Swagmode.Name = "Swagmode"
+Swagmode.Parent = Crashing
+Swagmode.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Swagmode.Position = UDim2.new(0, 6, 0, 48)
+Swagmode.Size = UDim2.new(0, 154, 0, 32)
+Swagmode.Font = Enum.Font.GothamMedium
+Swagmode.Text = "Swagmode Crasher"
+Swagmode.TextColor3 = Color3.fromRGB(255, 255, 255)
+Swagmode.TextSize = 15.000
+Swagmode.TextWrapped = true
+
+Swagmode_2.Name = "Swagmode"
+Swagmode_2.Parent = Swagmode
+Swagmode_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Swagmode_2.BackgroundTransparency = 1.000
+Swagmode_2.Position = UDim2.new(0, 0, 0, -21)
+Swagmode_2.Size = UDim2.new(0, 77, 0, 21)
+Swagmode_2.Font = Enum.Font.GothamMedium
+Swagmode_2.Text = "Swagmode"
+Swagmode_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Swagmode_2.TextSize = 14.000
+Swagmode_2.TextXAlignment = Enum.TextXAlignment.Left
+
 UICorner_15.CornerRadius = UDim.new(0, 4)
-UICorner_15.Parent = Fps60
+UICorner_15.Parent = Swagmode
 
-Fps40.Name = "Fps40"
-Fps40.Parent = Tab3
-Fps40.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-Fps40.BorderSizePixel = 0
-Fps40.Position = UDim2.new(0.343599647, 0, 0.737256765, 0)
-Fps40.Size = UDim2.new(0, 123, 0, 43)
-Fps40.Font = Enum.Font.GothamMedium
-Fps40.Text = "Set FPS to 40"
-Fps40.TextColor3 = Color3.fromRGB(255, 255, 255)
-Fps40.TextSize = 16.000
+Encrypt.Name = "Encrypt"
+Encrypt.Parent = Crashing
+Encrypt.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Encrypt.Position = UDim2.new(0, 6, 0, 105)
+Encrypt.Size = UDim2.new(0, 154, 0, 32)
+Encrypt.Font = Enum.Font.GothamMedium
+Encrypt.Text = "Encrypt Crasher"
+Encrypt.TextColor3 = Color3.fromRGB(255, 255, 255)
+Encrypt.TextSize = 15.000
+Encrypt.TextWrapped = true
+
+Encrypt_2.Name = "Encrypt"
+Encrypt_2.Parent = Encrypt
+Encrypt_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Encrypt_2.BackgroundTransparency = 1.000
+Encrypt_2.Position = UDim2.new(0, 0, 0, -21)
+Encrypt_2.Size = UDim2.new(0, 77, 0, 21)
+Encrypt_2.Font = Enum.Font.GothamMedium
+Encrypt_2.Text = "Encrypt"
+Encrypt_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Encrypt_2.TextSize = 14.000
+Encrypt_2.TextXAlignment = Enum.TextXAlignment.Left
+
 UICorner_16.CornerRadius = UDim.new(0, 4)
-UICorner_16.Parent = Fps40
+UICorner_16.Parent = Encrypt
 
-LowGfx_2.Name = "LowGfx"
-LowGfx_2.Parent = Tab3
-LowGfx_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-LowGfx_2.BorderSizePixel = 0
-LowGfx_2.Position = UDim2.new(0.672086239, 0, 0.737256765, 0)
-LowGfx_2.Size = UDim2.new(0, 123, 0, 43)
-LowGfx_2.Font = Enum.Font.GothamMedium
-LowGfx_2.Text = "Set FPS to 30"
-LowGfx_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-LowGfx_2.TextSize = 16.000
+BetterDahood.Name = "BetterDahood"
+BetterDahood.Parent = Crashing
+BetterDahood.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+BetterDahood.Position = UDim2.new(0, 6, 0, 163)
+BetterDahood.Size = UDim2.new(0, 154, 0, 32)
+BetterDahood.Font = Enum.Font.GothamMedium
+BetterDahood.Text = "BetterDaHood Crasher"
+BetterDahood.TextColor3 = Color3.fromRGB(255, 255, 255)
+BetterDahood.TextSize = 15.000
+BetterDahood.TextWrapped = true
+
+BetterDaHood.Name = "BetterDaHood"
+BetterDaHood.Parent = BetterDahood
+BetterDaHood.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BetterDaHood.BackgroundTransparency = 1.000
+BetterDaHood.Position = UDim2.new(0, 0, 0, -21)
+BetterDaHood.Size = UDim2.new(0, 97, 0, 21)
+BetterDaHood.Font = Enum.Font.GothamMedium
+BetterDaHood.Text = "BetterDaHood"
+BetterDaHood.TextColor3 = Color3.fromRGB(255, 255, 255)
+BetterDaHood.TextSize = 14.000
+BetterDaHood.TextXAlignment = Enum.TextXAlignment.Left
+
 UICorner_17.CornerRadius = UDim.new(0, 4)
-UICorner_17.Parent = LowGfx_2
+UICorner_17.Parent = BetterDahood
 
-Logo.Name = "Logo"
-Logo.Parent = Frame
-Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Logo.BorderSizePixel = 0
-Logo.Position = UDim2.new(0.470842361, 0, 0.00354599953, 0)
-Logo.Size = UDim2.new(0, 48, 0, 48)
-Logo.Image = "rbxassetid://10339283002"
+CashCounterPage.Name = "CashCounterPage"
+CashCounterPage.Parent = Gui
+CashCounterPage.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+CashCounterPage.Position = UDim2.new(0, 179, 0, 230)
+CashCounterPage.Size = UDim2.new(0, 157, 0, 52)
 
-Page3.Name = "Page3"
-Page3.Parent = Frame
-Page3.BackgroundTransparency = 1.000
-Page3.LayoutOrder = 3
-Page3.Position = UDim2.new(0.018358469, 0, 0.439716309, 0)
-Page3.Size = UDim2.new(0, 39, 0, 33)
-Page3.ZIndex = 2
-Page3.Image = "rbxassetid://3926307971"
-Page3.ImageRectOffset = Vector2.new(924, 444)
-Page3.ImageRectSize = Vector2.new(36, 36)
+UICorner_18.CornerRadius = UDim.new(0, 4)
+UICorner_18.Parent = CashCounterPage
+
+BetterDaHood_2.Name = "BetterDaHood"
+BetterDaHood_2.Parent = CashCounterPage
+BetterDaHood_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BetterDaHood_2.BackgroundTransparency = 1.000
+BetterDaHood_2.Position = UDim2.new(0, 30, 0, 0)
+BetterDaHood_2.Size = UDim2.new(0, 97, 0, 21)
+BetterDaHood_2.Font = Enum.Font.GothamMedium
+BetterDaHood_2.Text = "Cash Counter"
+BetterDaHood_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+BetterDaHood_2.TextSize = 14.000
+BetterDaHood_2.TextXAlignment = Enum.TextXAlignment.Left
+
+CashCoutner.Name = "CashCoutner"
+CashCoutner.Parent = CashCounterPage
+CashCoutner.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CashCoutner.BackgroundTransparency = 1.000
+CashCoutner.Position = UDim2.new(0, 0, 0, 21)
+CashCoutner.Size = UDim2.new(0, 157, 0, 31)
+CashCoutner.Font = Enum.Font.GothamMedium
+CashCoutner.Text = "$100,000,000"
+CashCoutner.TextColor3 = Color3.fromRGB(255, 255, 255)
+CashCoutner.TextSize = 15.000
 
 -- Scripts:
 
-local function KBKVYZ_fake_script() -- Page1.LocalScript 
-	local script = Instance.new('LocalScript', Page1)
+local function JQJPN_fake_script() -- PlayerInfo.LocalScript 
+	local script = Instance.new('LocalScript', PlayerInfo)
 
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Tab1.Visible = true
-		script.Parent.Parent.Tab2.Visible = false
-		script.Parent.Parent.Tab3.Visible = false
-	end)
+	script.Parent.FocusLost:connect(function()
+		for i,v in pairs(game.Players:GetChildren()) do
+			if (string.sub(string.lower(v.Name),1,string.len(PlayerInfo.Text))) == string.lower(PlayerInfo.Text) then
+				PlayerInfo.Text = v.Name
+			end
+		end
+	end)	
 end
-coroutine.wrap(KBKVYZ_fake_script)()
-local function HUZZAN_fake_script() -- ImageLabel.LocalScript 
-	local script = Instance.new('LocalScript', ImageLabel)
-
-	local Players = game:GetService("Players")
-	
-	local player = Players.LocalPlayer
-	
-	local userId = player.UserId
-	local thumbType = Enum.ThumbnailType.HeadShot
-	local thumbSize = Enum.ThumbnailSize.Size420x420
-	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
-	
-	local imageLabel = script.Parent
-	imageLabel.Image = content
-end
-coroutine.wrap(HUZZAN_fake_script)()
-local function XDXXCQO_fake_script() -- TextLabel.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel)
-
-	local player = game.Players.LocalPlayer
-	
-	if player then
-		script.Parent.Text = "Welcome, "..player.Name
-	end
-end
-coroutine.wrap(XDXXCQO_fake_script)()
-local function NTIO_fake_script() -- GoTo.LocalScript 
+coroutine.wrap(JQJPN_fake_script)()
+local function BLVYFZ_fake_script() -- GoTo.LocalScript 
 	local script = Instance.new('LocalScript', GoTo)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players[PlayerInfo.Text].Character.UpperTorso.Position)
 	end)
 end
-coroutine.wrap(NTIO_fake_script)()
-local function SNOVQ_fake_script() -- A_VIEW.LocalScript 
+coroutine.wrap(BLVYFZ_fake_script)()
+local function DQNUWDM_fake_script() -- A_VIEW.LocalScript 
 	local script = Instance.new('LocalScript', A_VIEW)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -440,82 +452,8 @@ local function SNOVQ_fake_script() -- A_VIEW.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SNOVQ_fake_script)()
-local function PWMCCC_fake_script() -- Page2.LocalScript 
-	local script = Instance.new('LocalScript', Page2)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Tab1.Visible = false
-		script.Parent.Parent.Tab2.Visible = true
-		script.Parent.Parent.Tab3.Visible = false
-	end)
-end
-coroutine.wrap(PWMCCC_fake_script)()
-local function HKYS_fake_script() -- CashCounter.LocalScript 
-	local script = Instance.new('LocalScript', CashCounter)
-
-	while wait() do
-		pcall(function()
-			local amount = 0
-			for i,v in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
-				if v.Name == "MoneyDrop" then
-					local cash = string.split(v.BillboardGui.TextLabel.Text,"$")[2]
-					if string.match(cash,',') then
-						amount = amount + cash:gsub("%,","")
-					else
-						amount = amount + cash
-					end
-				end
-			end
-			local function checking(amount)
-				amount = tostring(amount)
-				return amount:reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
-			end
-			script.Parent.Text = "$"..checking(amount).." "
-		end)
-	end
-end
-coroutine.wrap(HKYS_fake_script)()
-local function UJRGM_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
-
-	local UIS = game:GetService('UserInputService')
-	local frame = script.Parent
-	local dragToggle = nil
-	local dragSpeed = 0.25
-	local dragStart = nil
-	local startPos = nil
-	
-	local function updateInput(input)
-		local delta = input.Position - dragStart
-		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
-	end
-	
-	frame.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-			dragToggle = true
-			dragStart = input.Position
-			startPos = frame.Position
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragToggle = false
-				end
-			end)
-		end
-	end)
-	
-	UIS.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			if dragToggle then
-				updateInput(input)
-			end
-		end
-	end)
-end
-coroutine.wrap(UJRGM_fake_script)()
-local function XIYN_fake_script() -- Fly.LocalScript 
+coroutine.wrap(DQNUWDM_fake_script)()
+local function CQKXFTQ_fake_script() -- Fly.LocalScript 
 	local script = Instance.new('LocalScript', Fly)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -630,125 +568,12 @@ local function XIYN_fake_script() -- Fly.LocalScript
 		start()
 	end)
 end
-coroutine.wrap(XIYN_fake_script)()
-local function UDGLPZB_fake_script() -- NoFog.LocalScript 
-	local script = Instance.new('LocalScript', NoFog)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		if not _G.FullBrightExecuted then
-	
-			_G.FullBrightEnabled = false
-	
-			_G.NormalLightingSettings = {
-				Brightness = game:GetService("Lighting").Brightness,
-				ClockTime = game:GetService("Lighting").ClockTime,
-				FogEnd = game:GetService("Lighting").FogEnd,
-				GlobalShadows = game:GetService("Lighting").GlobalShadows,
-				Ambient = game:GetService("Lighting").Ambient
-			}
-	
-			game:GetService("Lighting"):GetPropertyChangedSignal("Brightness"):Connect(function()
-				if game:GetService("Lighting").Brightness ~= 1 and game:GetService("Lighting").Brightness ~= _G.NormalLightingSettings.Brightness then
-					_G.NormalLightingSettings.Brightness = game:GetService("Lighting").Brightness
-					if not _G.FullBrightEnabled then
-						repeat
-							wait()
-						until _G.FullBrightEnabled
-					end
-					game:GetService("Lighting").Brightness = 1
-				end
-			end)
-	
-			game:GetService("Lighting"):GetPropertyChangedSignal("ClockTime"):Connect(function()
-				if game:GetService("Lighting").ClockTime ~= 12 and game:GetService("Lighting").ClockTime ~= _G.NormalLightingSettings.ClockTime then
-					_G.NormalLightingSettings.ClockTime = game:GetService("Lighting").ClockTime
-					if not _G.FullBrightEnabled then
-						repeat
-							wait()
-						until _G.FullBrightEnabled
-					end
-					game:GetService("Lighting").ClockTime = 12
-				end
-			end)
-	
-			game:GetService("Lighting"):GetPropertyChangedSignal("FogEnd"):Connect(function()
-				if game:GetService("Lighting").FogEnd ~= 786543 and game:GetService("Lighting").FogEnd ~= _G.NormalLightingSettings.FogEnd then
-					_G.NormalLightingSettings.FogEnd = game:GetService("Lighting").FogEnd
-					if not _G.FullBrightEnabled then
-						repeat
-							wait()
-						until _G.FullBrightEnabled
-					end
-					game:GetService("Lighting").FogEnd = 786543
-				end
-			end)
-	
-			game:GetService("Lighting"):GetPropertyChangedSignal("GlobalShadows"):Connect(function()
-				if game:GetService("Lighting").GlobalShadows ~= false and game:GetService("Lighting").GlobalShadows ~= _G.NormalLightingSettings.GlobalShadows then
-					_G.NormalLightingSettings.GlobalShadows = game:GetService("Lighting").GlobalShadows
-					if not _G.FullBrightEnabled then
-						repeat
-							wait()
-						until _G.FullBrightEnabled
-					end
-					game:GetService("Lighting").GlobalShadows = false
-				end
-			end)
-	
-			game:GetService("Lighting"):GetPropertyChangedSignal("Ambient"):Connect(function()
-				if game:GetService("Lighting").Ambient ~= Color3.fromRGB(178, 178, 178) and game:GetService("Lighting").Ambient ~= _G.NormalLightingSettings.Ambient then
-					_G.NormalLightingSettings.Ambient = game:GetService("Lighting").Ambient
-					if not _G.FullBrightEnabled then
-						repeat
-							wait()
-						until _G.FullBrightEnabled
-					end
-					game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
-				end
-			end)
-	
-			game:GetService("Lighting").Brightness = 1
-			game:GetService("Lighting").ClockTime = 12
-			game:GetService("Lighting").FogEnd = 786543
-			game:GetService("Lighting").GlobalShadows = false
-			game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
-	
-			local LatestValue = true
-			spawn(function()
-				repeat
-					wait()
-				until _G.FullBrightEnabled
-				while wait() do
-					if _G.FullBrightEnabled ~= LatestValue then
-						if not _G.FullBrightEnabled then
-							game:GetService("Lighting").Brightness = _G.NormalLightingSettings.Brightness
-							game:GetService("Lighting").ClockTime = _G.NormalLightingSettings.ClockTime
-							game:GetService("Lighting").FogEnd = _G.NormalLightingSettings.FogEnd
-							game:GetService("Lighting").GlobalShadows = _G.NormalLightingSettings.GlobalShadows
-							game:GetService("Lighting").Ambient = _G.NormalLightingSettings.Ambient
-						else
-							game:GetService("Lighting").Brightness = 1
-							game:GetService("Lighting").ClockTime = 12
-							game:GetService("Lighting").FogEnd = 786543
-							game:GetService("Lighting").GlobalShadows = false
-							game:GetService("Lighting").Ambient = Color3.fromRGB(178, 178, 178)
-						end
-						LatestValue = not LatestValue
-					end
-				end
-			end)
-		end
-	
-		_G.FullBrightExecuted = true
-		_G.FullBrightEnabled = not _G.FullBrightEnabled
-	end)
-end
-coroutine.wrap(UDGLPZB_fake_script)()
-local function EIOJED_fake_script() -- LowGfx.LocalScript 
+coroutine.wrap(CQKXFTQ_fake_script)()
+local function FJOB_fake_script() -- LowGfx.LocalScript 
 	local script = Instance.new('LocalScript', LowGfx)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		local decalsyeeted = true
+		local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
 		local g = game
 		local w = g.Workspace
 		local l = g.Lighting
@@ -787,36 +612,81 @@ local function EIOJED_fake_script() -- LowGfx.LocalScript
 		end
 	end)
 end
-coroutine.wrap(EIOJED_fake_script)()
-local function KIZMDF_fake_script() -- Cdestroy.LocalScript 
-	local script = Instance.new('LocalScript', Cdestroy)
+coroutine.wrap(FJOB_fake_script)()
+local function LARVIGL_fake_script() -- SpyChat.LocalScript 
+	local script = Instance.new('LocalScript', SpyChat)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		for i,v in pairs(game.Workspace.Ignored.Drop:GetChildren()) do 
-			if v.Name == "MoneyDrop" then 
-				v:Destroy()
-			end
-		end
-	end)
-end
-coroutine.wrap(KIZMDF_fake_script)()
-local function OXYJ_fake_script() -- CdestroyLoop.LocalScript 
-	local script = Instance.new('LocalScript', CdestroyLoop)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		while true do
-			for i,v in pairs(game.Workspace.Ignored.Drop:GetChildren()) do 
-				if v.Name == "MoneyDrop" then 
-					v:Destroy()
+		--This script reveals ALL hidden messages in the default chat
+		--chat "/MagmaHacks" to toggle!
+		enabled = true
+		--if true will check your messages too
+		spyOnMyself = false
+		--if true will chat the logs publicly (fun, risky)
+		public = false
+		--if true will use /me to stand out
+		publicItalics = true
+		--customize private logs
+		privateProperties = {
+			Color = Color3.fromRGB(0,255,255); 
+			Font = Enum.Font.SourceSansBold;
+			TextSize = 18;
+		}
+		--////////////////////////////////////////////////////////////////
+		local StarterGui = game:GetService("StarterGui")
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer or Players:GetPropertyChangedSignal("LocalPlayer"):Wait() or Players.LocalPlayer
+		local saymsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
+		local getmsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("OnMessageDoneFiltering")
+		local instance = (_G.chatSpyInstance or 0) + 1
+		_G.chatSpyInstance = instance
+	
+		local function onChatted(p,msg)
+			if _G.chatSpyInstance == instance then
+				if p==player and msg:lower():sub(1,4)=="/MagmaHacks" then
+					enabled = not enabled
+					wait(0.3)
+					privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+					StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+				elseif enabled and (spyOnMyself==true or p~=player) then
+					msg = msg:gsub("[\n\r]",''):gsub("\t",' '):gsub("[ ]+",' ')
+					local hidden = true
+					local conn = getmsg.OnClientEvent:Connect(function(packet,channel)
+						if packet.SpeakerUserId==p.UserId and packet.Message==msg:sub(#msg-#packet.Message+1) and (channel=="All" or (channel=="Team" and public==false and Players[packet.FromSpeaker].Team==player.Team)) then
+							hidden = false
+						end
+					end)
+					wait(1)
+					conn:Disconnect()
+					if hidden and enabled then
+						if public then
+							saymsg:FireServer((publicItalics and "/me " or '').."{SPY} [".. p.Name .."]: "..msg,"All")
+						else
+							privateProperties.Text = "{SPY} [".. p.Name .."]: "..msg
+							StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+						end
+					end
 				end
 			end
-			wait(0.2)
 		end
+	
+		for _,p in ipairs(Players:GetPlayers()) do
+			p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+		end
+		Players.PlayerAdded:Connect(function(p)
+			p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+		end)
+		privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+		StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+		if not player.PlayerGui:FindFirstChild("Chat") then wait(3) end
+		local chatFrame = player.PlayerGui.Chat.Frame
+		chatFrame.ChatChannelParentFrame.Visible = true
+		chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
 	end)
 end
-coroutine.wrap(OXYJ_fake_script)()
-local function EILYUTL_fake_script() -- Freecam.LocalScript 
-	local script = Instance.new('LocalScript', Freecam)
+coroutine.wrap(LARVIGL_fake_script)()
+local function UFDYOAH_fake_script() -- FreeCam.LocalScript 
+	local script = Instance.new('LocalScript', FreeCam)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		function sandbox(var,func)
@@ -1324,51 +1194,100 @@ local function EILYUTL_fake_script() -- Freecam.LocalScript
 		end
 	end)
 end
-coroutine.wrap(EILYUTL_fake_script)()
-local function LKGGXQ_fake_script() -- Fps60.LocalScript 
-	local script = Instance.new('LocalScript', Fps60)
+coroutine.wrap(UFDYOAH_fake_script)()
+local function ZRBJPZ_fake_script() -- AdminBase.LocalScript 
+	local script = Instance.new('LocalScript', AdminBase)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		setfpscap(60)
+		game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart').CFrame = CFrame.new(-872.030029296875, -38.401187896728516, -585.260009765625)
 	end)
 end
-coroutine.wrap(LKGGXQ_fake_script)()
-local function CQYZBO_fake_script() -- Fps40.LocalScript 
-	local script = Instance.new('LocalScript', Fps40)
+coroutine.wrap(ZRBJPZ_fake_script)()
+local function VOZW_fake_script() -- Swagmode.LocalScript 
+	local script = Instance.new('LocalScript', Swagmode)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		setfpscap(40)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
 	end)
 end
-coroutine.wrap(CQYZBO_fake_script)()
-local function RLPEW_fake_script() -- LowGfx_2.LocalScript 
-	local script = Instance.new('LocalScript', LowGfx_2)
+coroutine.wrap(VOZW_fake_script)()
+local function FZUXI_fake_script() -- Encrypt.LocalScript 
+	local script = Instance.new('LocalScript', Encrypt)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		setfpscap(30)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/remorseW/encryptW/main/CustomEncryptCrasher.lua'))()
 	end)
 end
-coroutine.wrap(RLPEW_fake_script)()
-local function BWYUVQO_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
+coroutine.wrap(FZUXI_fake_script)()
+local function KOWY_fake_script() -- BetterDahood.LocalScript 
+	local script = Instance.new('LocalScript', BetterDahood)
 
-	local HotKey = Enum.KeyCode.V
-	local UIS = game:GetService("UserInputService")
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BetterDaHood/BetterDaHoodCrasher/main/Crash'))()
+	end)
+end
+coroutine.wrap(KOWY_fake_script)()
+local function FJDLO_fake_script() -- CashCoutner.LocalScript 
+	local script = Instance.new('LocalScript', CashCoutner)
+
+	while wait() do
+		pcall(function()
+			local amount = 0
+			for i,v in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
+				if v.Name == "MoneyDrop" then
+					local cash = string.split(v.BillboardGui.TextLabel.Text,"$")[2]
+					if string.match(cash,',') then
+						amount = amount + cash:gsub("%,","")
+					else
+						amount = amount + cash
+					end
+				end
+			end
+			local function checking(amount)
+				amount = tostring(amount)
+				return amount:reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
+			end
+			script.Parent.Text = "$"..checking(amount).." "
+		end)
+	end
+end
+coroutine.wrap(FJDLO_fake_script)()
+local function WQKFL_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
 	
-	UIS.InputBegan:Connect(function(Key)
-		if Key.KeyCode == HotKey then
-			script.Parent.Visible = not script.Parent.Visible
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
 		end
 	end)
 end
-coroutine.wrap(BWYUVQO_fake_script)()
-local function DXJYRI_fake_script() -- Page3.LocalScript 
-	local script = Instance.new('LocalScript', Page3)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Tab1.Visible = false
-		script.Parent.Parent.Tab2.Visible = false
-		script.Parent.Parent.Tab3.Visible = true
-	end)
-end
-coroutine.wrap(DXJYRI_fake_script)()
+coroutine.wrap(WQKFL_fake_script)()
